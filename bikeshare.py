@@ -150,6 +150,7 @@ def user_stats(df):
 def display_data(df):
             """Displays individual trip data on bikeshare users."""
             print('Displaying raw data from biking dataset .... \n')
+            print("exception")
             user_question = input('Would you like to view individual trip data? Enter yes or no:  \n').lower()
             x = 0
             y = 5
