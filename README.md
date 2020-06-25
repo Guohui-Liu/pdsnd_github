@@ -2,10 +2,7 @@
 June 22, 2020
 
 ### Project Title
-Project #2
-
-### Description
-Describe what your project is about and what it does
+Project 
 
 ### Description
 Python Project about Exploring Data of a Bikeshare System
