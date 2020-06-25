@@ -5,7 +5,7 @@ June 22, 2020
 Project #2
 
 ### Description
-Python Project about Exploring Data of a Bikeshare System
+Python Project about Exploring the Data of a Bikeshare System
 
 ### Files used
 bikeshare.py
