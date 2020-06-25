@@ -1,3 +1,6 @@
+#June 22, 2020
+
+
 import time
 import pandas as pd
 import numpy as np
@@ -15,25 +18,26 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     
-    print('Hello! Let\'s explore some US bikeshare data!')
+   print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = ''
-    while city not in ['chicago', 'new york city', 'washington']:
-        city = input('Enter your city(Chicago or New York City or Washington): ').lower()
+   city = ''
+   # while city not in ['chicago', 'new york city', 'washington']:
+        city = input('Input your city(Chicago or New York City or Washington): ').lower()
         
 
     # TO DO: get user input for month (all, january, february, ... , june)
+    print("Month data was only provided from January to June.")
     month=''
     while month not in ['all', 'january', 'february','march', 'april', 'may' , 'june']:
-        month = input('Enter your month(month from January to June or All): ').lower()
+        month = input('Input your month(month from January to June or All): ').lower()
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day = ''
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday','friday', 'saturday', 'sunday']:
-        day = input('Enter your day of week(any day or All): ').lower()
+        day = input('Input your day of week(any day or All): ').lower()
 
     print('-'*40)
-    return city, month, day
+    return city, month, day 
 
 
 def load_data(city, month, day):
@@ -110,7 +114,7 @@ def trip_duration_stats(df):
     # TO DO: display mean travel time
     print(df.groupby('Trip Duration').mean())
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nThis took %s seconds.\n" % (time.time() - start_time))
     print('-'*40)
 
 
@@ -175,6 +179,7 @@ def main():
         
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
+        
         if restart.lower() != 'yes':
             break
 
